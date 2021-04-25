@@ -16,8 +16,8 @@ A flutter based app built for a remote petfeeder system.
 -   Dart
 
 <p>
-    <img  src="/mockup/1.jpeg">
-    <img  src="/mockup/2.jpeg">
-    <img  src="/mockup/3.jpeg">
-    <img  src="/mockup/4.jpeg">
+    <img width="220" src="/mockup/1.jpeg">
+    <img width="220" src="/mockup/2.jpeg">
+    <img width="220" src="/mockup/3.jpeg">
+    <img width="220" src="/mockup/4.jpeg">
 </p>
