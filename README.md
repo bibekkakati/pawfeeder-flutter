@@ -1,16 +1,23 @@
-# app
+## PawFeeder
 
-A new Flutter project.
+A flutter based app built for a remote petfeeder system.
 
-## Getting Started
+### Description
 
-This project is a starting point for a Flutter application.
+-   An automated pet feeder system, which we can control with an android app remotely (through the internet).
+-   Can send a signal to the system to release food instantly or schedule it.
+-   The system is connected with a [backend server](https://github.com/bibekkakati/pawfeeder-backend) which is hosted in AWS and it communicates via WebSocket.
+-   The android app sends the signals to the server using Rest API.
+-   IoT system is built using ESP8266 NodeMCU development board, continuous servo motor and programmed it in such a way that one can configure the WiFi from the app itself. A custom sound module is also integrated to call the pet's name while releasing food.
 
-A few resources to get you started if this is your first Flutter project:
+### Technology Used:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+-   Flutter
+-   Dart
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p>
+    <img  src="/mockup/1.jpeg">
+    <img  src="/mockup/2.jpeg">
+    <img  src="/mockup/3.jpeg">
+    <img  src="/mockup/4.jpeg">
+</p>
