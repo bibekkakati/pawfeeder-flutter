@@ -15,11 +15,11 @@ A flutter based app built for a remote petfeeder system.
 -   Flutter
 -   Dart
 
-<p>
+<p align="center">
     <img width="260" src="/mockup/1.jpeg">
     <img width="260" src="/mockup/2.jpeg">
 </p>
-<p>
+<p align="center">
     <img width="260" src="/mockup/3.jpeg">
     <img width="260" src="/mockup/4.jpeg">
 </p>
