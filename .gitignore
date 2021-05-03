@@ -48,3 +48,4 @@ app.*.map.json
 
 # Custom config files
 **/google-services.json
+.env*

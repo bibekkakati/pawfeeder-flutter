@@ -1,12 +1,11 @@
 import 'dart:async';
-
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class Server {
   static Server _server;
-  static String baseURL =
-      "http://ec2-65-0-76-153.ap-south-1.compute.amazonaws.com";
+  static String baseURL = env["BASE_URL"];
 
   Map<String, dynamic> _responseObj = {};
 

@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import './screens/HomePage.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
@@ -17,6 +18,10 @@ Future<void> main() async {
 
   // Set the background messaging handler early on, as a named top-level function
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+  // Loading environment variables
+  await DotEnv.load(fileName: ".env");
+
   runApp(MyApp());
 }
 
