@@ -26,3 +26,6 @@ A flutter based app built for a remote petfeeder system.
     <img width="260" src="/mockup/3.jpeg">
     <img width="260" src="/mockup/4.jpeg">
 </p>
+<p align="center">
+    <img src="/mockup/PawFeeder_Flow.png">
+</p>
