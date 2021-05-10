@@ -17,14 +17,15 @@ A flutter based app built for a remote petfeeder system.
 
 <p align="center">
     <img width="260" src="/mockup/screen.png">
-</p>
-<p align="center">
     <img width="260" src="/mockup/1.jpeg">
-    <img width="260" src="/mockup/2.jpeg">
 </p>
 <p align="center">
+    <img width="260" src="/mockup/2.jpeg">
     <img width="260" src="/mockup/3.jpeg">
+</p>
+<p align="center">
     <img width="260" src="/mockup/4.jpeg">
+    <img width="260" src="/mockup/5.jpeg">
 </p>
 <p align="center">
     <img src="/mockup/PawFeeder_Flow.png">
