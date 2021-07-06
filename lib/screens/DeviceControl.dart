@@ -8,6 +8,7 @@ import 'package:app/widgets/OptionCard.dart';
 import 'package:app/widgets/ScheduleList.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DeviceControl extends StatefulWidget {
   @override
@@ -136,7 +137,20 @@ class _DeviceControlState extends State<DeviceControl> {
     }
   }
 
+  void _launchSetupPage() async {
+    String url = "http://192.168.1.1/";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      showMessageBar(context, "Something went wrong", error: true);
+    }
+  }
+
   void onCardClick(int cardIdx) async {
+    if (_cards[cardIdx] == _cards[2]) {
+      this._launchSetupPage();
+      return;
+    }
     if (activeCard != _cards[cardIdx]) {
       setState(() {
         activeCard = _cards[cardIdx];
@@ -274,8 +288,6 @@ class _DeviceControlState extends State<DeviceControl> {
   Widget build(BuildContext context) {
     Widget _getCardContent() {
       if (_error == false) {
-        // TODO: other cards goes here too
-
         return activeCard == _cards[0] || activeCard == _cards[1]
             ? ScheduleList(
                 date: scheduledDate,
